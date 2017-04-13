@@ -11,5 +11,6 @@ export const routes: Routes = [
     canActivate: [ CanActivateViaAuthGuard ]
   },
   { path: 'product', loadChildren: './product/index#ProductModule' },
-  { path: 'auth', loadChildren: './auth/auth.module#AuthModule' }
+  { path: 'auth', loadChildren: './auth/auth.module#AuthModule' },
+  { path: 'customer', loadChildren: './customer/index#CustomerModule' }
 ];
